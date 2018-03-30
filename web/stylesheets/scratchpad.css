@@ -33,3 +33,8 @@ footer {
   /* top | right | bottom | left */
   padding: 4px 1em 6px 2em;
 }
+
+.navbar
+{
+    background-color: #55CCCC;
+}
