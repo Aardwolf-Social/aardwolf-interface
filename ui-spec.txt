@@ -1,0 +1,5 @@
+- The footer will be fixed across all pages
+- The header will be fixed for all logged in users
+- Shortcuts will link to asides that will replace the shortcuts menu
+- Menu items on the asides will link to containers that will replace the users feed container
+- Shortcuts that link to smaller items (calendar?) may use overlays instead
