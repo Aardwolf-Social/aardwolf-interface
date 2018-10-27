@@ -1,123 +1,14 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{% block title %}Club Eleven {% endblock %}</title>
-        <link rel="stylesheet" href="/static/css/bulma.css">
-        <link rel="stylesheet" href="/static/css/fork-awesome.css">
-        <link rel="stylesheet"
-              href="https://cdn.jsdelivr.net/npm/fork-awesome@1.0.11/css/fork-awesome.min.css"
-              integrity="sha256-MGU/JUq/40CFrfxjXb5pZjpoZmxiP2KuICN5ElLFNd8="
-              crossorigin="anonymous">
-        <link rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
-        <link rel="stylesheet" media="screen" href="../stylesheets/scratchpad.css">
-    </head>
-    <body>
-        <nav class="navbar" >
-            <!-- Top nav -->
-            {% block nav %}
-            <div class="navbar-brand">
-                <a class="navbar-item">
-                    <img src="https://bulma.io/images/placeholders/128x128.png" alt="Aardwolf">
-                </a>
-                <div class="navbar-burger burger" data-target="navbar_menu_hero_a">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-            </div>
-            <div id="navbar_menu_hero_a" class="navbar-menu">
-                <div class="navbar-start" >
-                    <div class="navbar-item">
-                        <div class="field is-grouped">
-                            <p class="control is-expanded">
-                                <input class="input  is-small" type="text" placeholder="Find a repository">
-                            </p>
-                            <p class="control">
-                                <a class="button is-info is-small">
-                                    Search
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                <div class="navbar-end">
-                    <a class="navbar-item is-active">
-                        Home
-                    </a>
-                    <a class="navbar-item">
-                        Examples
-                    </a>
-                    <a class="navbar-item">
-                        Documentation
-                    </a>
-                    <span class="navbar-item">
-                        <a class="button is-primary is-inverted">
-                            <span class="icon">
-                                <i class="fa fa-github"></i>
-                            </span>
-                            <span>Download</span>
-                        </a>
-                    </span>
-                </div>
-            </div>
-            {% endblock nav %}
-        </nav>
+<html lang="en">
+<head>
+    {% block head %}
 
-        <div class="columns is-mobile">
-            <div class="column is-3" style="padding-left: 1em; background-color: aliceblue">
-                <aside class="menu">
-                    {% block menu %}
-                    <a class="fa fa-user-circle-o"> BanjoFox</a>
-                    <ul class="menu-list">
-                        <li><a class="fa fa-newspaper-o" aria-hidden="true"> News Feed</a></li>
-                        <li><a class="fa fa-envelope" aria-hidden="true"> Messages</a></li>
-                    </ul>
-                    <p class="menu-label">
-                        <span class="fa fa-star" aria-hidden="true"> Shortcuts</span>
-                    </p>
-                    <ul class="menu-list">
-                        <li><a class="fa fa-calendar" aria-hidden="true"> Calendar</a></li>
-                        <li><a class="fa fa-users" aria-hidden="true"> Groups</a></li>
-                        <li><a class="fa fa-list" aria-hidden="true"> Lists</a></li>
-                        <li><a class="fa fa-picture-o" aria-hidden="true"> Photos</a></li>
-                        <li><a class="fa fa-bookmark" aria-hidden="true"> Favorites</a></li>
-                        <li><a class="fa fa-cloud" aria-hidden="true"> Weather</a></li>
-                    </ul>
-                    <p class="menu-label">
-                        <span class="fa fa-lightbulb-o" aria-hidden="true"> Make Something!</span>
-                    </p>
-                    <ul class="menu-list">
-                        <li><a class="fa fa-calendar-plus-o" aria-hidden="true"> New Event</a></li>
-                        <li><a class="fa fa-users" aria-hidden="true"> New Group</a></li>
-                    </ul>
-                    {% endblock menu %}
-                </aside>
-            </div>
+    {% endblock head %}
+</head>
+<body>
+    <div id="content">{% block content %}{% endblock content %}</div>
+	{% block footer %}
 
-            <div class="column">
-                <section class="section">
-                    {% block content %}
-                    <p> Primary feed will go here.  This is the "sample_converstation" from home_demo.html.</p>
-                    {% endblock content %}
-                </section>
-            </div>
-        </div>
-        <footer class="footer">
-            <div class="container">
-                <div class="content has-text-centered">
-                    <a href="termsofservice.html" class="footer_box">Terms of Service</a>
-                    <span class="vertical_line" />
-                    <span class="footer_box">Copyright - 2017</span>
-                    <span class="vertical_line" />
-                    <a href="https://github.com/BanjoFox/aardwolf" class="footer_box">Check us out on <i class="fa fa-lg fa-github"></i></a>
-                    <span class="vertical_line" />
-                    <a href="https://www.patreon.com/banjofox" class="footer_box">Buy Banjo a <span class="fa fa-beer"aria-hidden="true"></span></a>
-                </div>
-            </div>
-        </footer>
-
-    </body>
+	{% endblock footer %}
+</body>
 </html>

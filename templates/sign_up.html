@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <!-- Begin Html Header -->
-  {% block html_head %}{% endblock html_head %}
-  <!-- End Html Header -->  
-
-  <body>
-  <!-- Begin Page Header -->
-  <header>
-    <h2 class="title">{{ instance_title }}</h2>
-    <div style="text-align: right">
-    <a href="sign_in">Have an Account? - Login</a>
-    </div>
-  </header>
-  <!-- End Page Header -->
+<div id="content">
   <section class="section">
   <div class="container">
       
@@ -41,7 +27,7 @@
       <p class="subtitle">
         Feel free to sign up!
       </p>
-    <span style="color: red;">{{ error_msg }}</span>
+    <span style="color: red;">{{ "Error Message" | _ }}</span>
 	  <form method="POST" action="/auth">
 		<input type="hidden" name="csrf_token" value="{{ token }}">
 		<span class="icon icon-user"></span>
@@ -56,10 +42,6 @@
 	  </form>
     </div>
   </div>
-</div>
-</section>
-  </body>
-  <!-- Begin Page Footer -->
-	{% block home_footer %}{% endblock home_footer %}
-  <!-- End Page Footer -->
-</html>
+  </div>
+  </section>
+</div>  
