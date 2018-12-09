@@ -17,7 +17,7 @@ Banjo had another note planned for this, but he can't think of what the heck it 
 
 
 
-**Directory Structure**
+**Directory Structure**<br />
 There are two primary directories for the app `templates` which houses the bulk of the HTML files, and `web` which is where the styling, and static assets go.
 
 ```
