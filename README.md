@@ -7,23 +7,29 @@ which is here: [Aardwolf-Social](https://gibhub.com/aardwolf-social/aardwolf).
 <br />
 
 One of the goals of the project overall is to keep it simple, and secure.  That means trying to minimize the use of iFrames, JavaScript, and other scripting 
-languages.  Thankfully HTML5, and the primary element library (Bulma.io)[https://bulma.io] are able to provide dynamic layouts using only HTML, and CSS. 
-Additionally, icons provided by (ForkAwesome)[https://forkawesome.github.io/Fork-Awesome/] (a FOSS alternative to that other popular icon library),
+languages.  Thankfully HTML5, and the primary element library [Bulma.io](https://bulma.io) are able to provide dynamic layouts using only HTML, and CSS. 
+Additionally, icons provided by [ForkAwesome](https://forkawesome.github.io/Fork-Awesome/) (a FOSS alternative to that other popular icon library),
 is also free of JavaScript. 
 <br />
+
 
 Banjo had another note planned for this, but he can't think of what the heck it was supposed to be.  Probably because he got distracted watching television.
 
 
 
-** Directory Structure **
+**Directory Structure**
+There are two primary directories for the app `templates` which houses the bulk of the HTML files, and `web` which is where the styling, and static assets go.
+
+```
 templates/      -- Template root (template base, un-authenticated templates go here)
 ├── asides      -- Left-hand menus
 ├── email       -- Email templates
 ├── home        -- Templates for logged-in users (main content, top nav, footer, etc.)
 ├── posts       -- Templates related to user posts (new post, reply, etc.)
 └── widgets     -- Reusable elements (text/password inputs, buttons, etc.)
+```
 
+```
 web
 ├── _sass           -- SASS files (SCSS syntax)
 │   ├── base            -- Global SCSS 
@@ -41,10 +47,10 @@ web
 │   └── forkawesome-1.1.5   -- Fork Awesome CSS
 │
 └── themes          -- Theme files (future planning)
-  
+```  
 
-** Developer Resources **
+**Developer Resources**
 
-Wireframes have been posted to InVision, which can also be used for advanced prototyping:
+Wireframes have been posted to InVision, which can also be used for advanced prototyping:<br />
 [InVision - Aardwolf Wireframes](https://invis.io/H3OTASXPMSY)
 
