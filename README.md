@@ -43,14 +43,18 @@ web
 ├── static          -- Other static files
 │
 ├── css             -- Compiled CSS
-│   ├── fonts               -- Font files for Forkawesome
-│   └── forkawesome-1.1.5   -- Fork Awesome CSS (grab a copy from [ForkAwesome](https://forkawesome.github.io/Fork-Awesome/))
+│   ├── fonts          -- Font files for Forkawesome
+│   └── forkawesome    -- Fork Awesome CSS (Not included)
 │
 └── themes          -- Theme files (future planning)
 ```  
 
 **Developer Resources**
 
+***InVision***<br />
 Wireframes have been posted to InVision, which can also be used for advanced prototyping:<br />
 [InVision - Aardwolf Wireframes](https://invis.io/H3OTASXPMSY)
 
+***CodePen***<br />
+Banjo also has a CodePen account here: <br />
+[CodePen](https://codepen.io/BanjoFox/)
