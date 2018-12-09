@@ -44,7 +44,7 @@ web
 │
 ├── css             -- Compiled CSS
 │   ├── fonts               -- Font files for Forkawesome
-│   └── forkawesome-1.1.5   -- Fork Awesome CSS
+│   └── forkawesome-1.1.5   -- Fork Awesome CSS (grab a copy from [ForkAwesome](https://forkawesome.github.io/Fork-Awesome/))
 │
 └── themes          -- Theme files (future planning)
 ```  
