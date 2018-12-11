@@ -1,3 +1,11 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aardwolf Social | Sign Up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/fontawesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+</head>
+
 <aside class="menu">
   <p class="menu-label">
     <a class="fa fa-chevron-left"> {{ "Go back" | _ }}</a>
