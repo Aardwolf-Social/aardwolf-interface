@@ -7,89 +7,106 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/scratchpad.css">
 </head>
 
-<!-- Begin Profile Section -->
 <section class="section">
     <div class="container">
 
-        <h2 class="title is-2">{{ "Preferences" | _ }}</h2>
+        <!-- Begin Profile Section -->
+        <div class="container">
 
-        <hr />
+            <h2 class="title is-2">{{ "Preferences" | _ }}</h2>
 
-        <!-- Level Jump To Menu -->
-        <nav class="level">
-            <p class="level-item has-text-centered">
-                <strong>{{ "Jump To:" | _ }}</strong>
-            </p>
-            <p class="level-item has-text-centered">
-                <a class="link is-info">{{ "LANGUAGE" | _ }}</a>
-            </p>
-            <p class="level-item has-text-centered">
-                <a class="link is-info">{{ "POST PRIVACY" | _}}</a>
-            </p>
-            <p class="level-item has-text-centered">
-                <a class="link is-info">{{ "SEARCH PRIVACY" | _}}</a>
-            </p>
-            <p class="level-item has-text-centered">
-                <a class="link is-info">{{ "INTERFACE" | _}}</a>
-            </p>
-        </nav>
+            <hr />
+
+            <!-- ****************** -->
+            <!-- Level Jump To Menu -->
+            <!-- ****************** -->
+
+            <nav class="level">
+                <p class="level-item has-text-centered">
+                    <strong>{{ "Jump To:" | _ }}</strong>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info">{{ "LANGUAGE" | _ }}</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info">{{ "POST PRIVACY" | _}}</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info">{{ "SEARCH PRIVACY" | _}}</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info">{{ "INTERFACE" | _}}</a>
+                </p>
+            </nav>
+        </div>
+        <!-- ****************** -->
         <!-- END Level Jump To Menu -->
+        <!-- ****************** -->
 
         <hr />
 
-        <div class="box">
-            <div>
-                <h3 class="title is-3">{{ "LANGUAGE" | _ }}</h3>
-                <a class="is-right" href="#">Top</a>
-            </div>
+        <!-- ***************** -->
+        <!-- Language Dropdown -->
+        <!-- ***************** -->
+        <div class="container">
+
+            <nav class="level">
+                <p class="level-item has-text-left">
+                    <strong>{{ "LANGUAGE" | _ }}</strong>
+                </p>
+                <p class="level-item has-text-right">
+                    <a class="is-right" href="#">Top</a>
+                </p>
+            </nav>
 
             <div class="columns is-mobile">
-                <div class="column is-half">
-                    <strong>Interface Language</strong>
-                    <br />
+                <div class="column">
+
                     <!-- ************************************ -->
                     <!-- widgets/lang_dropdown.html -->
                     <!-- ************************************ -->
-                    <div class="dropdown">
-                        <div class="dropdown-trigger">
-                            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                <span>{{ "Language" | _ }}</span>
-                                <span class="icon is-small">
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </span>
-                            </button>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                            <div class="dropdown-content">
-                                <a href="#" class="dropdown-item">
-                                    English
-                                    <!-- (Top item should be default from aardwolf.toml) -->
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    Japanese
-                                </a>
-                                <a class="dropdown-item">
-                                    Parcel Tongue
-                                </a>
-                                <a class="dropdown-item">
-                                    Polish
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    Redneck
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    Urdu
-                                </a>
+                    <div class="field">
+                        <label class="label">Interface Language</label>
+                        <div class="dropdown">
+                            <div class="dropdown-trigger">
+                                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                    <span>{{ "Language" | _ }}</span>
+                                    <span class="icon is-small">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </button>
                             </div>
-                        </div>
-                    </div> <!-- END Dropdown selections -->
+                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                <div class="dropdown-content">
+                                    <a href="#" class="dropdown-item">
+                                        English
+                                        <!-- (Top item should be default from aardwolf.toml) -->
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        Japanese
+                                    </a>
+                                    <a class="dropdown-item">
+                                        Parcel Tongue
+                                    </a>
+                                    <a class="dropdown-item">
+                                        Polish
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        Redneck
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        Urdu
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- END Dropdown selections -->
+                        <p class="help">The language of the user interface, e-mails, and push notifications</p>
+                    </div><!-- END Field -->
                     <!-- ************************************ -->
                     <!-- END widgets/lang_dropdown.html -->
                     <!-- ************************************ -->
-                    <p>The language of the user interface, e-mails, and push notifications</p>
                 </div>
-
-                <div class="column is-half">
+                <div class="column">
                     <strong>Posting Language</strong>
                     <br />
                     <!-- ************************************ -->
@@ -131,115 +148,505 @@
                     <!-- ************************************ -->
                     <!-- END widgets/lang_interface_dropdown.html -->
                     <!-- ************************************ -->
-                    <p>The language your posts will be listed as.</p>
+                    <p class="help">The language your posts will be listed as.</p>
                 </div>
             </div>
+            <!-- ********************* -->
+            <!-- END Language Dropdown -->
+            <!-- ********************* -->
 
-
-            <!-- Language filtering display name -->
-            <!-- Guess I should do a UL huh.... -->
+            <!-- ************** -->
+            <!-- Language Fiter -->
+            <!-- ************** -->
             <div class="columns">
                 <div class="column">
-                    <label class="checkbox">
-                        <input type="checkbox">
-                        Dog
-                    </label>
-                    <label class="checkbox">
-                        <input type="checkbox">
-                        English
-                    </label>
-                    <label class="checkbox">
-                        <input type="checkbox">
-                        Japanese
-                    </label>
-                    <label class="checkbox">
-                        <input type="checkbox">
-                        Parcel Tongue
-                    </label>
-
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                01001110
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Awoo
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Chinese
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Dog
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="column">
-                    <label class="checkbox">
-                        <input type="checkbox">
-                        Polish
-                    </label>
-                    <label class="checkbox">
-                        <input type="checkbox">
-                        Redneck
-                    </label>
-                    <label class="checkbox">
-                        <input type="checkbox">
-                        Urdu
-                    </label>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                English
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Ftagn
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Japanese
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Kobold
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Parcel Tongue
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Polish
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Redneck
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Urdu
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ****************** -->
+        <!-- END Language Fiter -->
+        <!-- ****************** -->
+
+        <hr />
+
+        <!-- ************ -->
+        <!-- Post Privacy -->
+        <!-- ************ -->
+        <div class="container">
+            <nav class="level">
+                <p class="level-item has-text-left">
+                    <strong>{{ "POST PRIVACY" | _ }}</strong>
+                </p>
+                <p class="level-item has-text-right">
+                    <a class="is-right" href="#">Top</a>
+                </p>
+            </nav>
+
+
+            <div class="control columns">
+                <div class="column">
+                    <div class="field">
+                        <p class="control">
+                            <label class="radio">
+                                <input type="radio" name="post_privacy" checked>
+                                Followers Only
+                                <p class="help">Only followers can see</p>
+                            </label>
+                        </p>
+                        <p class="control">
+                            <label class="radio">
+                                <input type="radio" name="post_privacy">
+                                Public
+                                <span class="help">Everyone can see</span>
+                            </label>
+                        </p>
+                        <p class="control">
+                            <label class="radio">
+                                <input type="radio" name="post_privacy">
+                                Unlisted
+                                <span class="help">Not listed in public timelines
+                                    <br />
+                                    Everyone can see</span>
+                            </label>
+                        </p>
+                    </div><!-- END Field group -->
+                </div>
+                <div class="column">
+                    <div class="field">
+                        <p class="control">
+                            <label class="radio">
+                                <input type="radio" name="post_privacy">
+                                Journaling
+                                <span class="help">Posts are visible by invitation only</span>
+                            </label>
+                        </p>
+                        <p class="control">
+                            <label class="radio">
+                                <input type="radio" name="post_privacy">
+                                Private
+                                <span class="help">Only you can see</span>
+                            </label>
+                        </p>
+                        <p class="control">
+                            <label class="checkbox">
+                                <input type="checkbox" name="post_privacy">
+                                Always mark media as sensitive
+                            </label>
+                        </p>
+                    </div><!-- END Field group -->
                 </div>
             </div>
         </div>
 
-        <!-- Profile bio -->
-        <div class="field box">
-            <label class="label">{{ "About you" | _ }}</label>
-            <div class="control">
-                <textarea class="textarea" placeholder="{{ "About you" | _ }}"></textarea>
+        <!-- ************ -->
+        <!-- Post Privacy -->
+        <!-- ************ -->
+
+        <hr />
+
+        <div class="container">
+            <!-- Search Privacy Container -->
+            <nav class="level">
+                <p class="level-item has-text-left">
+                    <strong>{{ "SEARCH PRIVACY" | _ }}</strong>
+                </p>
+                <p class="level-item has-text-right">
+                    <a class="is-right" href="#">Top</a>
+                </p>
+            </nav>
+
+            <!-- *************** -->
+            <!-- Profile Privacy -->
+            <!-- *************** -->
+            <div class="field is-horizontal">
+                <div class="field-label">
+                    <label class="label">Privacy</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="search_profile">
+                                Public
+                                <span class="help">Everyone can see</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="search_profile" checked>
+                                Local-Only
+                                <span class="help">Visible to local users</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="search_profile">
+                                Private
+                                <span class="help">Not searchable anywhere</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>{{ "{{ count }} characters remaining" | _n(singular="One character remaining", count=n_characters) }}</p><!-- temporary placeholder -->
-        </div>
+            <!-- ******************* -->
+            <!-- END Profile Privacy -->
+            <!-- ******************* -->
 
-        <!-- Profile Avatar -->
-        <div class="box">
-            <label class="label">{{ "Upload Avatar" | _ }}</label>
-            <figure class="image is-128x128">
-                <img src="https://bulma.io/images/placeholders/128x128.png">
-            </figure>
-            <br />
-
-            <!-- Avatar upload controls -->
-            <div class="file has-name">
-                <label class="file-label">
-                    <input class="file-input" type="file" name="resume">
-                    <span class="file-cta">
-                        <span class="file-icon">
-                            <i class="fa fa-upload"></i>
-                        </span>
-                        <span class="file-label">
-                            {{ "Choose a file…" | _ }}
-                        </span>
-                    </span>
-                    <span class="file-name">
-                        {{ "No file chosen" | _ }}
-                    </span>
-                </label>
+            <!-- ************** -->
+            <!-- Events Privacy -->
+            <!-- ************** -->
+            <div class="field is-horizontal">
+                <div class="field-label">
+                    <label class="label">Events</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="search_events">
+                                Public
+                                <span class="help">Everyone can see</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="search_events" checked>
+                                Local-Only
+                                <span class="help">Visible to local users</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="search_events">
+                                Private
+                                <span class="help">Not searchable anywhere</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>{{ "PNG, GIF or JPG. At most 2MB. Will be downscaled to 120x120px" | _ }}</p>
-        </div>
+            <!-- ****************** -->
+            <!-- END Events Privacy -->
+            <!-- ****************** -->
 
-        <!-- Profile Header -->
-        <div class="box">
-            <label class="label">{{ "Upload profile header" | _ }}</label>
-            <figure class="image is-128x128">
-                <img src="https://bulma.io/images/placeholders/128x128.png">
-            </figure>
-            <br />
-
-            <!-- Header upload controls -->
-            <div class="file has-name">
-                <label class="file-label">
-                    <input class="file-input" type="file" name="resume">
-                    <span class="file-cta">
-                        <span class="file-icon">
-                            <i class="fa fa-upload"></i>
-                        </span>
-                        <span class="file-label">
-                            {{ "No file chosen" | _ }}
-                        </span>
-                    </span>
-                    <span class="file-name">
-                        {{ "Choose a file…" | _ }}
-                    </span>
-                </label>
+            <!-- ************** -->
+            <!-- Groups Privacy -->
+            <!-- ************** -->
+            <div class="field is-horizontal">
+                <div class="field-label">
+                    <label class="label">Groups</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="search_groups">
+                                Public
+                                <span class="help">Everyone can see</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="search_groups" checked>
+                                Local-Only
+                                <span class="help">Visible to local users</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="search_groups">
+                                Private
+                                <span class="help">Not searchable anywhere</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>{{ "PNG, GIF or JPG. At most 2MB. Will be downscaled to 700x335px" | _ }}</p><!-- temporary placeholder -->
-        </div>
+            <!-- ****************** -->
+            <!-- END Groups Privacy -->
+            <!-- ****************** -->
+
+            <!-- ************** -->
+            <!-- Tags Privacy -->
+            <!-- ************** -->
+            <div class="field is-horizontal">
+                <div class="field-label">
+                    <label class="label">Tags</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="search_tags">
+                                Public
+                                <span class="help">Everyone can see</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="search_tags" checked>
+                                Local-Only
+                                <span class="help">Visible to local users</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="search_tags">
+                                Private
+                                <span class="help">Not searchable anywhere</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- **************** -->
+            <!-- END Tags Privacy -->
+            <!-- **************** -->
+        </div><!-- END Search Privacy Container -->
+
+        <hr />
+
+        <div class="container">
+            <!--  Interface Preferences -->
+            <nav class="level">
+                <p class="level-item has-text-left">
+                    <strong>{{ "INTERFACE" | _ }}</strong>
+                </p>
+                <p class="level-item has-text-right">
+                    <a class="is-right" href="#">Top</a>
+                </p>
+            </nav>
+            <div class="columns is-mobile">
+                <div class="column">
+                    <!-- ************************************ -->
+                    <!-- widgets/lang_dropdown.html -->
+                    <!-- ************************************ -->
+                    <div class="field">
+                        <label class="label">Site Theme</label>
+                        <div class="dropdown">
+                            <div class="dropdown-trigger">
+                                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                    <span>{{ "Language" | _ }}</span>
+                                    <span class="icon is-small">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                <div class="dropdown-content">
+                                    <a href="#" class="dropdown-item">
+                                        English
+                                        <!-- (Top item should be default from aardwolf.toml) -->
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        Japanese
+                                    </a>
+                                    <a class="dropdown-item">
+                                        Parcel Tongue
+                                    </a>
+                                    <a class="dropdown-item">
+                                        Polish
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        Redneck
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        Urdu
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- END Dropdown selections -->
+                    </div><!-- END Field -->
+                    <!-- ************************************ -->
+                    <!-- END widgets/lang_dropdown.html -->
+                    <!-- ************************************ -->
+                </div><!-- END Interface Preference left column -->
+                <div class="column">
+                    <!-- ************************************ -->
+                    <!-- widgets/lang_dropdown.html -->
+                    <!-- ************************************ -->
+                    <div class="field">
+                        <label class="label">Site Theme</label>
+                        <div class="dropdown">
+                            <div class="dropdown-trigger">
+                                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                    <span>{{ "Language" | _ }}</span>
+                                    <span class="icon is-small">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                <div class="dropdown-content">
+                                    <a href="#" class="dropdown-item">
+                                        English
+                                        <!-- (Top item should be default from aardwolf.toml) -->
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        Japanese
+                                    </a>
+                                    <a class="dropdown-item">
+                                        Parcel Tongue
+                                    </a>
+                                    <a class="dropdown-item">
+                                        Polish
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        Redneck
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        Urdu
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- END Dropdown selections -->
+                    </div><!-- END Field -->
+                    <!-- ************************************ -->
+                    <!-- END widgets/lang_dropdown.html -->
+                    <!-- ************************************ -->
+
+                </div><!-- END Interface Preference right column -->
+            </div><!-- END Interface Preference Columns -->
+
+            <!-- ******************** -->
+            <!-- Interface checkboxes -->
+            <!-- ******************** -->
+            <div class="field">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Show confirmation dialog before unfollowing someone
+                    </label>
+                </div>
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Show confirmation dialog before boosting
+                    </label>
+                </div>
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Show confirmation dialog before deleting a post
+                    </label>
+                </div>
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Auto-play animated GIFs
+                    </label>
+                </div>
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Always auto-expand posts marked with content warnings 
+                    </label>
+                </div>
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Reduce motion in animations
+                    </label>
+                </div>
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Use system's default font
+                    </label>
+                </div>
+            </div>
+            <!-- ************************ -->
+            <!-- END Interface checkboxes -->
+            <!-- ************************ -->
+
+        </div><!-- END Interface Preferences -->
 
     </div>
+    <!- END primary container -->
 </section>
+<!- END primary section -->
 <!-- End Profile Section -->
