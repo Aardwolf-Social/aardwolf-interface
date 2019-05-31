@@ -3,7 +3,7 @@ This is a dedicated repository for the User Interface (Front End) components of 
 
 Ideally the interface being built here should be able to stand on its own.  This allows developers to play around, and test out ideas 
 without having to build the full rust project.  Once the visual components have been vetted, they will of course need to be "backported" into the main repository
-which is here: [Aardwolf-Social](https://gibhub.com/aardwolf-social/aardwolf).
+which is here: [Aardwolf-Social](https://github.com/aardwolf-social/aardwolf).
 <br />
 
 One of the goals of the project overall is to keep it simple, and secure.  That means trying to minimize the use of iFrames, JavaScript, and other scripting 
