@@ -1,16 +1,21 @@
     body {
-      background: #f8fefd;
+	  color: #222;
+	  background-color: #f0ebe2;
+	  border-top: 10px solid #3f1906;	  
     }
+		
     .navbar {
-    background-color: #55CCCC;
+	  color: #f0ebe2;
+	  background-color: #3f1906;
+	  border-bottom: 5px solid #008b82;
     }
     .columns:not(:last-child) {
       margin: 0 auto 0 auto;
     }
     .left-column {
-      border-left: 1px solid #1e1c11;
-      border-right: 1px solid #1e1c11;
-      background: #e5edfb;
+      border-left: 1px solid #008b82;
+      border-right: 1px solid #008b82;
+      background: #f0ebe2;
       padding: 0 11em 0 1em;
     }
     .right-column {
