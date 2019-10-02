@@ -1,0 +1,36 @@
+body {
+	background-color: $background-color;
+	border-top: 10px solid $dark-color;
+	padding: 0;
+	margin: 0;
+	
+	font-family: $font-family;
+	font-size: 16px;
+	color: $text-color;
+}
+a, a:link { color: $link-color; }
+a:visited { color: $link-visited-color; } 
+a:hover, a:active { color: $link-active-color; text-decoration: underline;}
+
+h2, h3 {
+	color: $dark-color;
+	font-family: $header-font-family;
+	font-weight: 600; 
+}
+
+h2 {
+	font-size: 150%;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+
+.content {
+	margin: 1em 20%;
+}
+
+.footer {
+	margin-top: 4em;
+}

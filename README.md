@@ -21,6 +21,14 @@ Banjo had another note planned for this, but he can't think of what the heck it 
 There are two primary directories for the app `templates` which houses the bulk of the HTML files, and `web` which is where the styling, and static assets go.
 
 ```
+aardwolf-templates/
+├── compiled_templates                      -- This is where the rust-compiled templates end up
+│   └── templates                           -- Follows the same structure as the HTML/Ructe path
+│       ├── home                            -- As below
+│       └── ui                              -- As below
+├── src                                     -- Not documented yet...
+│   └── ui                                  -- Not documented yet...
+│
 ├── templates                               -- The root for the HTML/Ructe templates
 │   │
 │   ├── asides                              -- Left-hand navigation menus 
@@ -59,6 +67,9 @@ There are two primary directories for the app `templates` which houses the bulk 
 │   ├── html_head.rs.html                       -- This is the <head> content
 │   ├── sign_in.rs.html                         -- User sign-in page
 │   └── sign_up.rs.html                         -- User sign-up page
+│
+├── build.rs                                -- Template build instructions
+└── Cargo.toml                              -- Cargo crate whoozits
 ```
 
 ```
