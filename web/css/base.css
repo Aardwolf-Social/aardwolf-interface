@@ -5,8 +5,8 @@
     }
 		
     .navbar {
-	  color: #f0ebe2;
-	  background-color: #3f1906;
+	  color: #3f1906;
+	  background-color: #f0ebe2;
 	  border-bottom: 5px solid #008b82;
     }
     .columns:not(:last-child) {

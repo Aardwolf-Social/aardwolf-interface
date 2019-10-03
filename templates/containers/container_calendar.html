@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-<script src="/web/javascript/vue.2.5.20.min.js"></script>
-<script src="/web/javascript/components/notificationBox.js"></script>
+<!-- ********************** -->
+<!-- Included for DEMO ONLY -->
+<!-- ********************** -->
+<script src="../web/javascript/vue.2.5.20.min.js"></script>
+<script src="../web/javascript/components/notificationBox.js"></script>
 <script>
   new Vue({
     el: "#app",
@@ -22,278 +25,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aardwolf Social | Homepage Demo</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="../web/css/fork-awesome-1.1.7/css/fork-awesome.min.css">
+  <link rel="stylesheet" href="../web/css/bulma-0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" href="../web/css/base.css">
+  <link rel="stylesheet" href="../web/css/scratchpad.css">
   <!-- Component styles -->
-  <link rel="stylesheet" href="/web/css/components/notificationBox.css">
-  <style>
-    body {
-      background: #f8fefd;
-    }
-    .columns:not(:last-child) {
-      margin: 0 auto 0 auto;
-    }
-    .footer {
-      padding: 2rem 1rem 1.5rem 1rem;
-      border-top: 1px solid #1e1c11;
-    }
-    .left-column {
-      border-left: 1px solid #1e1c11;
-      border-right: 1px solid #1e1c11;
-      background: #e5edfb;
-      padding: 0 11em 0 1em;
-    }
-    .right-column {
-      margin: 0 2em 2em 2em;
-    }
-    .user-nav {
-      background-color: #CFDDF5;
-      border-bottom: 1px solid #1e1c11;
-      padding: .45em;
-    }
-    .posts {
-      margin: 0 2em 2em 2em;
-    }
-    .sidebar-menu {
-      margin: 0 -11em auto auto;
-      padding: 3em 2.5em 0 0;
-    }
-    .search-bar {
-      padding: 0 0 .8em 0;
-    }
-  </style>
+  <link rel="stylesheet" href="../web/css/components/notificationBox.css">
 </head>
+<!-- ********************** -->
+<!-- /Included for DEMO ONLY -->
+<!-- ********************** -->
 
 <body>
 
-<!-- **************************** -->
-<!-- This is the REUSABLE content -->
-<!-- **************************** -->
+<!-- ********************** -->
+<!-- Logged in Top Nav Menu -->
+<!-- ********************** -->
 
-<nav class="navbar user-nav">
-  <!-- Top nav -->
-  <div class="container" id="app">
-    <div class="navbar-brand">
-      <a class="navbar-item">
-        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Aardwolf">
-      </a>
-      <span class="navbar-burger burger" data-target="navbar_menu_hero_a">
-			<span></span>
-        <span></span>
-        <span></span>
-        </span>
-    </div>
-    <div id="navbar_menu_hero_a" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item is-active">
-          Home
-        </a>
-        <a @click="toggleNotifCompView" class="navbar-item" href="#">
-          My Notifications
-        </a>
-        <a class="navbar-item">
-          Examples
-        </a>
-        <notification-box v-if="showNotificationBox"></notification-box>
-        <a class="navbar-item">
-          Documentation
-        </a>
-        <!--TODO: make footer link instead-->
-        <!--<span class="navbar-item">-->
-        <!--<a class="button is-primary is-inverted">-->
-        <!--<span class="icon">-->
-        <!--<i class="fa fa-github"></i>-->
-        <!--</span>-->
-        <!--<span>Download</span>-->
-        <!--</a>-->
-        <!--</span>-->
-      </div>
-    </div>
-  </div>
-</nav>
+<div class="columns is-mobile"><!-- Column Content Container -->
+  <div class="left-column columns is-3"><!-- Left-column (Nav) -->
 
-<div class="columns is-mobile">
-  <div class="left-column columns is-3">
-    <aside class="menu sidebar-menu">
-      <div class="search-bar field">
-        <p class="control has-icons-left has-icons-right">
-          <input class="input" type="text" placeholder="Search">
-          <span class="icon is-small is-left">
-            <i class="fas fa-search"></i>
-          </span>
-        </p>
-      </div>
-      <a><i class="fa fa-user-circle"></i> BanjoFox </a>
-      <ul class="menu-list">
-        <li>
-          <a><i class="fa fa-newspaper" aria-hidden="true"></i> News Feed</a>
-        </li>
-        <li>
-          <a><i class="fa fa-envelope" aria-hidden="true"></i> Messages</a>
-        </li>
-      </ul>
-      <p class="menu-label">
-        <span>
-            <i class="fa fa-star" aria-hidden="true"></i> Shortcuts
-        </span>
-      </p>
-      <ul class="menu-list">
-        <li>
-          <a href="containers/calendar.html"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</a>
-        </li>
-        <li>
-          <a><i class="fa fa-users" aria-hidden="true"></i> Groups</a>
-        </li>
-        <li>
-          <a><i class="fa fa-list" aria-hidden="true"></i> Lists</a>
-        </li>
-        <li><a><i class="fa fa-file-image" aria-hidden="true"></i> Photos</a></li>
-        <li><a><i class="fa fa-bookmark" aria-hidden="true"></i> Favorites</a></li>
-        <li><a><i class="fa fa-cloud" aria-hidden="true"></i> Weather</a></li>
-      </ul>
-      <p class="menu-label">
-        <span> <i class="fa fa-lightbulb" aria-hidden="true"></i> Make Something!</span>
-      </p>
-      <ul class="menu-list">
-        <li><a> <i class="fa fa-calendar" aria-hidden="true"></i> New Event</a></li>
-        <li><a> <i class="fa fa-users" aria-hidden="true"></i> New Group</a></li>
-      </ul>
-    </aside>
-  </div>
-  <div class="right-column columns">
-    <section class="section">
-      <div class="posts">
-        <article class="media">
-          <figure class="media-left">
-            <p class="image is-64x64">
-              <img src="https://bulma.io/images/placeholders/128x128.png" alt="{{"Username" | _}}">
-            </p>
-          </figure>
-          <div class="media-content">
-            <div class="field">
-              <p class="control">
-                <textarea class="textarea" placeholder="Add a comment..."></textarea>
-              </p>
-            </div>
-            <nav class="level">
-              <div class="level-left">
-                <div class="level-item">
-                  <a class="button is-info">Submit</a>
-                </div>
-              </div>
-              <div class="level-right">
-                <div class="level-item">
-                  <label class="checkbox">
-                    <input type="checkbox"> Press enter to submit
-                  </label>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </article>
-        <!-- End of new post -->
+	<!-- ****************** -->
+	<!-- Left-hand Nav Menu -->
+	<!-- ****************** -->
 
-        <article class="media">
-          <!-- Begin sample conversation -->
-          <figure class="media-left">
-            <p class="image is-64x64">
-              <img src="https://bulma.io/images/placeholders/128x128.png" alt="{{"Username" | _}}">
-            </p>
-          </figure>
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <strong>Barbara Middleton</strong>
-                <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
-                <br>
-                <small><a>Like</a> · <a>Reply</a> · <a>Boost</a> · <i class="fa fa-ellipsis-h" aria-hidden="true"></i> · 3 hrs</small>
-              </p>
-            </div>
-            <article class="media">
-              <figure class="media-left">
-                <p class="image is-48x48">
-                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="{{"Username" | _}}">
-                </p>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>Sean Brown</strong>
-                    <br> Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
-                    <br>
-                    <small><a>Like</a> · <a>Reply</a> · <a>Boost</a> · <i class="fa fa-ellipsis-h" aria-hidden="true"></i> · 2 hrs</small>
-                  </p>
-                </div>
-                <article class="media">
-                  Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem cursus ullamcorper sit amet nec massa.
-                </article>
-                <article class="media">
-                  Morbi vitae diam et purus tincidunt porttitor vel vitae augue. Praesent malesuada metus sed pharetra euismod. Cras tellus odio, tincidunt iaculis diam non, porta aliquet tortor.
-                </article>
-              </div>
-            </article>
+  </div><!-- /Left-column (Nav)-->
+  <div class="right-column columns"><!-- Right-column (Main content) -->
+    <section class="section"><!-- Right-column Section -->
 
-            <article class="media">
-              <figure class="media-left">
-                <p class="image is-48x48">
-                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="{{"Username" | _}}">
-                </p>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>Kayli Eunice </strong>
-                    <br> Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                    Curae; Phasellus lacinia non nisl id feugiat.
-                    <br>
-                    <small><a>Like</a> · <a>Reply</a> · <a>Boost</a> · <i class="fa fa-ellipsis-h" aria-hidden="true"></i> · 2 hrs</small>
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </article>
-        <!-- End sample conversation -->
+	<p>Hey check it out!  There is a Calendar with date/time pickers on <a href="https://creativebulma.net">Creative Bulma</a>!!<br />
+	   <a href="https://creativebulma.net/product/calendar">https://creativebulma.net/product/calendar</a>
+  
+    </section><!-- /Right-column Section -->
+  </div><!-- /Right-column -->
+</div><!-- /Column Content Container -->
 
-        <article class="media">
-          <!-- Begin reply box -->
-          <figure class="media-left">
-            <p class="image is-64x64">
-              <img src="https://bulma.io/images/placeholders/128x128.png" alt="{{"Username" | _}}">
-            </p>
-          </figure>
-          <div class="media-content">
-            <div class="field">
-              <p class="control">
-                <textarea class="textarea" placeholder="Add a comment..."></textarea>
-              </p>
-            </div>
-            <div class="field">
-              <p class="control">
-                <button class="button">Reply</button>
-              </p>
-            </div>
-          </div>
-        </article>
-        <!-- End reply box -->
-
-      </div>
-    </section>
-  </div>
-</div>
 </body>
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a href="termsofservice.html" class="footer_box">Terms of Service</a>
-      <span class="vertical_line" />
-      <span class="footer_box">Copyright - 2017</span>
-      <span class="vertical_line" />
-      <a href="https://github.com/BanjoFox/aardwolf" class="footer_box">Check us out on <i class="fas fa-lg fa-github"></i></a>
-      <span class="vertical_line" />
-      <a href="https://www.patreon.com/banjofox" class="footer_box">Buy Banjo a <span class="fa fa-beer"aria-hidden="true"></span></a>
-    </div>
-  </div>
-</footer>
+
+	<!-- ************** -->
+	<!-- Footer Content -->
+	<!-- ************** -->
 
 </html>
