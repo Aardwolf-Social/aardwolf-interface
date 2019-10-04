@@ -7,6 +7,7 @@
 
 <script src="../web/javascript/vue.2.5.20.min.js"></script>
 <script src="../web/javascript/components/notificationBox.js"></script>
+<script src="../web/javascript/components/delete_notification.js"></script>
 <script>
   new Vue({
     el: "#app",
@@ -59,15 +60,67 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-end">
-	    <!-- Nav Right-hand Menu -->	
+	    <!-- Top Nav Right-hand Menu -->	
         <a class="navbar-item">
           Home
         </a>
-        <a @click="toggleNotifCompView" class="navbar-item" href="#">
-          My Notifications
-        </a>
-		<notification-box v-if="showNotificationBox"></notification-box>
-	  <!-- Nav Right-hand Dropdown -->
+		
+		<!-- Top Nav Notifications Dropdown -->
+		<div class="navbar-item has-dropdown is-hoverable">
+		<a class="navbar-link">
+		  Notifications
+		</a>
+		  <div class="navbar-dropdown">
+            <a class="navbar-item">
+			
+			<div class="box">
+			  <article class="media">
+				<div class="media-left">
+				  <figure>
+					<img src="../web/images/default_avatar.png" alt="Profile Image" aria-hidden="true">
+				  </figure>
+				</div>
+				<div class="media-content">
+				  <div class="content">
+					  <strong>John Smith</strong> <small>@aardwolf.social</small>
+					  <br />
+					  Favorited your post
+					   <br />
+					   <small><time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time></small>		  
+				  </div>
+				</div>
+			  </article>
+			</div>
+
+            </a>
+            <a class="navbar-item">
+			
+			<div class="box">
+			  <article class="media">
+				<div class="media-left">
+				  <figure>
+					<img src="../web/images/default_avatar.png" alt="Profile Image" aria-hidden="true">
+				  </figure>
+				</div>
+				<div class="media-content">
+				  <div class="content">
+					  <strong>John Smith</strong> <small>@aardwolf.social</small>
+					  <br />
+					  Favorited your post
+					   <br />
+					   <small><time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time></small>		  
+				  </div>
+				</div>
+			  </article>
+			</div>
+
+            </a>			
+		  </div>
+		</div>
+		<!-- /Top Nav Notifications Dropdown -->
+		<!-- Nav Login/Logout Buttons -->
+
+	  <!-- Top Nav More Dropdown -->
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More
@@ -88,7 +141,7 @@
             </a>
           </div>
       </div>
-	  <!-- /Nav Dropdown -->
+	  <!-- /Top Nav More Dropdown -->
 	  <!-- Nav Login/Logout Buttons -->
       <div class="navbar-item">
         <div class="buttons">
@@ -97,7 +150,7 @@
           </a>
         </div>
       </div>
-	  <!-- /Nav Login/Logout Buttons -->	  
+	  <!-- /Top Nav Login/Logout Buttons -->	  
     </div><!-- /navbar-end -->
   </div><!-- /navbarBasicExample -->
 </nav> <!-- /home_nav_top -->
@@ -105,10 +158,10 @@
 
 <div class="columns is-mobile"> <!-- Body container -->
 
-  <!-- ***************************** -->
-  <!-- FILE: /home/home_nav_left.html -->
-  <!-- ***************************** -->
   <div class="left-column columns is-3">
+    <!-- ***************************** -->
+    <!-- FILE: /aside/aside_nav_left.htm -->
+    <!-- ***************************** -->
     <aside class="menu sidebar-menu">
 	  
 	  <!-- ***************************** -->
@@ -163,7 +216,7 @@
         <li><a> <i class="fa fa-calendar" aria-hidden="true"></i> New Event</a></li>
         <li><a> <i class="fa fa-users" aria-hidden="true"></i> New Group</a></li>
       </ul>
-    </aside><!-- /home/home_nav_left.html -->
+    </aside><!-- /aside/aside_nav_left.html -->
   </div>
   
   <div class="right-column columns">
