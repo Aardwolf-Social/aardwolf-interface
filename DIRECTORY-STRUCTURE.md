@@ -1,25 +1,3 @@
-# aardwolf-interface
-This is a dedicated repository for the User Interface (Front End) components of the Aardwolf Project :)
-
-Ideally the interface being built here should be able to stand on its own.  This allows developers to play around, and test out ideas 
-without having to build the full rust project.  Once the visual components have been vetted, they will of course need to be "backported" into the main repository
-which is here: [Aardwolf-Social](https://github.com/aardwolf-social/aardwolf).
-<br />
-
-One of the goals of the project overall is to keep it simple, and secure.  That means trying to minimize the use of iFrames, JavaScript, and other scripting 
-languages.  Thankfully HTML5, and the primary element library [Bulma.io](https://bulma.io) are able to provide dynamic layouts using only HTML, and CSS. 
-Additionally, icons provided by [ForkAwesome](https://forkawesome.github.io/Fork-Awesome/) (a FOSS alternative to that other popular icon library),
-is also free of JavaScript. 
-<br />
-
-
-Banjo had another note planned for this, but he can't think of what the heck it was supposed to be.  Probably because he got distracted watching television.
-
-
-
-**Directory Structure**<br />
-There are two primary directories for the app `templates` which houses the bulk of the HTML files, and `web` which is where the styling, and static assets go.
-
 ```
 aardwolf-templates/
 ├── compiled_templates                      -- This is where the rust-compiled templates end up
@@ -71,33 +49,3 @@ aardwolf-templates/
 ├── build.rs                                -- Template build instructions
 └── Cargo.toml                              -- Cargo crate whoozits
 ```
-
-```
-web
-├── _sass           -- SASS files (SCSS syntax)
-│   ├── base            -- Global SCSS 
-│   ├── external        -- reset.scss (and similar)
-│   ├── includes        -- footer, header
-│   └── layouts         -- structural styles (Bulma, and overrides)
-│
-├── emoji           -- Emoji images (future planning)
-├── images          -- Static images
-├── javascript      -- JavaScript files (if needed)
-├── static          -- Other static files
-│
-├── css             -- Compiled CSS
-│   ├── fonts          -- Font files for Forkawesome
-│   └── forkawesome    -- Fork Awesome CSS (Not included)
-│
-└── themes          -- Theme files (future planning)
-```  
-
-**Developer Resources**
-
-***InVision***<br />
-Wireframes have been posted to InVision, which can also be used for advanced prototyping:<br />
-[InVision - Aardwolf Wireframes](https://invis.io/H3OTASXPMSY)
-
-***CodePen***<br />
-Banjo also has a CodePen account here: <br />
-[CodePen](https://codepen.io/BanjoFox/)
