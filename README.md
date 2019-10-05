@@ -17,7 +17,7 @@ There are two primary directories for the app `templates` which houses the bulk 
 
 **File Naming Convention**
 The current naming convention is: `directoryname_description.html`
-This is done to be able to find, and organize files quickly while troubleshooting. 
+This is done to be able to find, and organize files quickly while troubleshooting.  The current exception to this rule is the "miscellaneous" parts which go into /templates/elements.  Even then those may have a better place elsewhere.
 
 **Developer Resources**
 
