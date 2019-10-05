@@ -1,3 +1,4 @@
+## HTML/CSS TEMPLATE FILES
 ```
 templates                               -- The root for the HTML/Ructe templates
 │
@@ -39,7 +40,7 @@ templates                               -- The root for the HTML/Ructe templates
 └── sign_up.html                         -- User sign-up page
 
 ```
-
+## STYLISTIC AND STATIC ASSETS
 ```
 web
 ├── _sass           -- SASS files (SCSS syntax)
