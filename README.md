@@ -28,3 +28,10 @@ Wireframes have been posted to InVision, which can also be used for advanced pro
 ***CodePen***<br />
 Banjo also has a CodePen account here: <br />
 [CodePen](https://codepen.io/BanjoFox/)
+
+***Contact***<br />
+Here is a couple of ways to get in touch <br />
+* Chat Room: [#aardwolf-discussion:matrix.org](https://riot.im/app/#/room/#aardwolf-discussion:matrix.org)
+* Discord: BanjoFox#2731
+
+
