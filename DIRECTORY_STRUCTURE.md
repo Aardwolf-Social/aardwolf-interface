@@ -1,4 +1,4 @@
-.
+-- Project root
 ├── CODE_OF_CONDUCT.md
 ├── design_notes
 │   ├── img
