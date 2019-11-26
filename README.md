@@ -31,7 +31,7 @@ Banjo also has a CodePen account here: <br />
 
 ***Contact***<br />
 Here is a couple of ways to get in touch <br />
-* Chat Room: [#aardwolf-discussion:matrix.org](https://riot.im/app/#/room/#aardwolf-discussion:matrix.org)
-* Discord: BanjoFox#2731
+* Aardwolf Developer Chat: [#aardwolf-discussion:matrix.org](https://riot.im/app/#/room/#aardwolf-discussion:matrix.org)
+* To speak to Banjo directly: [https://banjo.codes](https://banjo.codes)
 
 
