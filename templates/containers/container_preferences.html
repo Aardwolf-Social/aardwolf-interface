@@ -66,90 +66,52 @@
 
             <div class="columns is-mobile">
                 <div class="column">
-
-                    <!-- ************************************ -->
-                    <!-- widgets/lang_dropdown.html -->
-                    <!-- ************************************ -->
-                    <div class="field">
-                        <label class="label">Interface Language</label>
-                        <div class="dropdown">
-                            <div class="dropdown-trigger">
-                                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                    <span>{{ "Language" | _ }}</span>
-                                    <span class="icon is-small">
-                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                                <div class="dropdown-content">
-                                    <a href="#" class="dropdown-item">
-                                        English
-                                        <!-- (Top item should be default from aardwolf.toml) -->
-                                    </a>
-                                    <a href="#" class="dropdown-item">
-                                        Japanese
-                                    </a>
-                                    <a class="dropdown-item">
-                                        Parcel Tongue
-                                    </a>
-                                    <a class="dropdown-item">
-                                        Polish
-                                    </a>
-                                    <a href="#" class="dropdown-item">
-                                        Redneck
-                                    </a>
-                                    <a href="#" class="dropdown-item">
-                                        Urdu
-                                    </a>
-                                </div>
-                            </div>
-                        </div><!-- END Dropdown selections -->
-                        <p class="help">The language of the user interface, e-mails, and push notifications</p>
-                    </div><!-- END Field -->
-                    <!-- ************************************ -->
-                    <!-- END widgets/lang_dropdown.html -->
-                    <!-- ************************************ -->
-                </div>
-                <div class="column">
-                    <strong>Posting Language</strong>
+                    <strong>{{ "Interface_Language" | _ }}</strong>
                     <br />
                     <!-- ************************************ -->
                     <!-- widgets/lang_dropdown.html -->
                     <!-- ************************************ -->
-                    <div class="dropdown">
-                        <div class="dropdown-trigger">
-                            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                <span>{{ "Language" | _ }}</span>
-                                <span class="icon is-small">
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </span>
-                            </button>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                            <div class="dropdown-content">
-                                <a href="#" class="dropdown-item">
-                                    English
-                                    <!-- (Top item should be default from aardwolf.toml) -->
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    Japanese
-                                </a>
-                                <a class="dropdown-item">
-                                    Parcel Tongue
-                                </a>
-                                <a class="dropdown-item">
-                                    Polish
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    Redneck
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    Urdu
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+					<div class="field">
+					  <p class="control is-expanded has-icons-left has-icons-right">
+						<div class="select is-narrow">
+						  <select>
+							<option value="english">English</option>
+							<option value="awoo">Awoo</option>
+							<option value="japanese">Japanese</option>
+							<option value="parcel_tongue">Parcel Tongue</option>
+							<option value="polish">Polish</option>
+							<option value="redneck">Redneck</option>
+							<option value="urdu">urdu</option>
+						  </select>
+						</div>
+					  </p>
+					</div><!-- END Dropdown selections -->
+                    <!-- ************************************ -->
+                    <!-- END widgets/lang_dropdown.html -->
+                    <!-- ************************************ -->
+					<p class="help">The language of the user interface, e-mails, and push notifications</p>
+                </div>
+                <div class="column">
+                    <strong>{{ "Posting_Language" | _ }}</strong>
+                    <br />
+                    <!-- ************************************ -->
+                    <!-- widgets/lang_interface_dropdown.html -->
+                    <!-- ************************************ -->
+					<div class="field">
+					  <p class="control is-expanded has-icons-left has-icons-right">
+						<div class="select is-narrow">
+						  <select>
+							<option value="english">English</option>
+							<option value="awoo">Awoo</option>
+							<option value="japanese">Japanese</option>
+							<option value="parcel_tongue">Parcel Tongue</option>
+							<option value="polish">Polish</option>
+							<option value="redneck">Redneck</option>
+							<option value="urdu">urdu</option>
+						  </select>
+						</div>
+					  </p>
+					</div>
                     <!-- ************************************ -->
                     <!-- END widgets/lang_interface_dropdown.html -->
                     <!-- ************************************ -->
@@ -343,9 +305,9 @@
             </div>
         </div>
 
-        <!-- ************ -->
-        <!-- Post Privacy -->
-        <!-- ************ -->
+        <!-- **************** -->
+        <!-- End Post Privacy -->
+        <!-- **************** -->
 
         <hr />
 
@@ -510,91 +472,23 @@
                     <!-- ************************************ -->
                     <!-- widgets/lang_dropdown.html -->
                     <!-- ************************************ -->
-                    <div class="field">
-                        <label class="label">Site Theme</label>
-                        <div class="dropdown">
-                            <div class="dropdown-trigger">
-                                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                    <span>{{ "Language" | _ }}</span>
-                                    <span class="icon is-small">
-                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                                <div class="dropdown-content">
-                                    <a href="#" class="dropdown-item">
-                                        English
-                                        <!-- (Top item should be default from aardwolf.toml) -->
-                                    </a>
-                                    <a href="#" class="dropdown-item">
-                                        Japanese
-                                    </a>
-                                    <a class="dropdown-item">
-                                        Parcel Tongue
-                                    </a>
-                                    <a class="dropdown-item">
-                                        Polish
-                                    </a>
-                                    <a href="#" class="dropdown-item">
-                                        Redneck
-                                    </a>
-                                    <a href="#" class="dropdown-item">
-                                        Urdu
-                                    </a>
-                                </div>
-                            </div>
-                        </div><!-- END Dropdown selections -->
-                    </div><!-- END Field -->
+					<div class="field">
+					  <label class="label">Site Theme</label>
+					  <p class="control is-expanded has-icons-left has-icons-right">
+						<div class="select is-narrow">
+						  <select>
+							<option value="theme_default">Default</option>
+							<option value="theme_light">Light</option>
+							<option value="theme_dark">Dark</option>
+							<option value="theme_contrast">High Contrast</option>
+						  </select>
+						</div>
+					  </p>
+					</div>
                     <!-- ************************************ -->
                     <!-- END widgets/lang_dropdown.html -->
                     <!-- ************************************ -->
                 </div><!-- END Interface Preference left column -->
-                <div class="column">
-                    <!-- ************************************ -->
-                    <!-- widgets/lang_dropdown.html -->
-                    <!-- ************************************ -->
-                    <div class="field">
-                        <label class="label">Site Theme</label>
-                        <div class="dropdown">
-                            <div class="dropdown-trigger">
-                                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                    <span>{{ "Language" | _ }}</span>
-                                    <span class="icon is-small">
-                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                                <div class="dropdown-content">
-                                    <a href="#" class="dropdown-item">
-                                        English
-                                        <!-- (Top item should be default from aardwolf.toml) -->
-                                    </a>
-                                    <a href="#" class="dropdown-item">
-                                        Japanese
-                                    </a>
-                                    <a class="dropdown-item">
-                                        Parcel Tongue
-                                    </a>
-                                    <a class="dropdown-item">
-                                        Polish
-                                    </a>
-                                    <a href="#" class="dropdown-item">
-                                        Redneck
-                                    </a>
-                                    <a href="#" class="dropdown-item">
-                                        Urdu
-                                    </a>
-                                </div>
-                            </div>
-                        </div><!-- END Dropdown selections -->
-                    </div><!-- END Field -->
-                    <!-- ************************************ -->
-                    <!-- END widgets/lang_dropdown.html -->
-                    <!-- ************************************ -->
-
-                </div><!-- END Interface Preference right column -->
             </div><!-- END Interface Preference Columns -->
 
             <!-- ******************** -->
