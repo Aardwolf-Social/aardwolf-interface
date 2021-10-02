@@ -1,0 +1,148 @@
+<!-- ########################## /DEMO PURPOSES ONLY ########################## -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Aardwolf Social | Homepage Demo</title>
+  <link rel="stylesheet" href="../../web/css/fork-awesome-1.1.7/css/fork-awesome.min.css"
+  type="text/css" />
+  <link rel="stylesheet" href="../../web/css/bulma-0.7.5/css/bulma.min.css" type=
+  "text/css" />
+  <link rel="stylesheet" href="../../web/css/base.css" type="text/css" />
+  <link rel="stylesheet" href="../../web/css/scratchpad.css" type="text/css" />
+  <!-- Component styles -->
+  <link rel="stylesheet" href="../../web/css/components/notificationBox.css" type=
+  "text/css" />
+</head><!-- ########################## /DEMO PURPOSES ONLY ########################## -->
+
+<body>
+<section class="section">
+	<div class="container">
+    
+	<!-- This is a copy/paste from Hackers.town.  WILL NOT WORK AS IS -->
+	<form class="simple_form new_custom_filter" id="new_custom_filter" novalidate="novalidate" action="/filters" accept-charset="UTF-8" method="post">
+		<input name="utf8" type="hidden" value="&#x2713;" />
+		<input type="hidden" name="authenticity_token" value="zk/INedUXxXaO+UBhvBfWsUko2qyBZcAuYM6ZVCkM9R5vcw8XQnl7FU8tw/gAtO9fbAKCBm9L8O6MGOl42WdkA==" />
+	<!-- END Stolen form code ;) -->
+	
+		<div class="field is-horizontal">
+		  <div class="field-label is-normal">
+			<label class="label">Keyword or Phrase</label>
+		  </div>
+		  <div class="field-body">
+			<div class="field">
+			  <div class="control">
+				<input class="input is-danger" type="text" placeholder="">
+			  </div>
+			  <p class="help is-danger">
+				This field is required
+			  </p>
+			</div>
+			<div class="field">
+			  <p class="control is-expanded has-icons-left has-icons-right">
+				<div class="select is-fullwidth">
+				  <select>
+					<option value="1800">30 minutes</option>
+					<option value="3600">1 hour</option>
+					<option value="21600">6 hours</option>
+					<option value="43200">12 hours</option>
+					<option value="86400">1 day</option>
+					<option value="604800">1 week</option>
+				  </select>
+				</div>
+			  </p>
+			</div>
+		  </div>
+		</div>
+
+		<!-- *************** -->
+		<!-- Filter Contexts -->
+		<!-- *************** -->
+		<div class="container">
+			<nav class="level">
+				<p class="level-item has-text-left">
+					<strong>{{ "FILTER CONTEXTS" | _ }}</strong>
+					<span class="help">One or multiple contexts where the filter should apply</span>
+				</p>
+			</nav>
+
+
+			<div class="control columns">
+				<div class="column">
+					<div class="field">
+						<p class="control">
+							<label class="checkbox">
+								<input type="checkbox" name="filter_contexts">
+								Home Timeline
+							</label>
+						</p>
+						<p class="control">
+							<label class="checkbox">
+								<input type="checkbox" name="filter_contexts">
+								Notifications
+							</label>
+						</p>						
+					</div><!-- END Field group -->
+				</div>
+				<div class="column">
+					<div class="field">
+						<p class="control">
+							<label class="checkbox">
+								<input type="checkbox" name="filter_contexts">
+								Public Timelines
+							</label>
+						</p>
+						<p class="control">
+							<label class="checkbox">
+								<input type="checkbox" name="filter_contexts">
+								Conversations
+							</label>
+						</p>
+					</div><!-- END Field group -->
+				</div>
+			</div>
+			<p class="control">
+				<label class="checkbox">
+					<input type="checkbox" name="filter_contexts">
+					<strong>Drop instead of hide</strong>
+					<span class="help">Filtered toots will disappear irreversibly, even if filter is later removed</span>
+				</label>
+			</p>
+			<p class="control">
+				<label class="checkbox">
+					<input type="checkbox" name="filter_contexts">
+					<strong>Whole Word</strong>
+					<span class="help">When the keyword or phrase is alphanumeric only, it will only be applied if it matches the whole word</span>
+				</label>
+			</p>
+		</div>
+
+		<!-- ******************* -->
+		<!-- End Filter Contexts -->
+		<!-- ******************* -->
+
+		<!-- BUTTON -->
+		<br />
+		<div class="field is-horizontal">
+		  <div class="field-label">
+			<!-- Left empty for spacing -->
+		  </div>
+		  <div class="field-body">
+			<div class="field">
+			  <div class="control">
+				<button class="button is-primary" name="button" type="submit">
+				  Add new filter
+				</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+	</form>
+
+  </div>
+</section>
