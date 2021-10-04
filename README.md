@@ -13,7 +13,7 @@ is also free of JavaScript.
 <br />
 
 **Directory Structure**<br />
-There are two primary directories for the app `templates` which houses the bulk of the HTML files, and `web` which is where the styling, and static assets go.  [Click here for a visual depitiction](DIRECTORY_STRUCTURE.MD)
+There are two primary directories for the app `templates` which houses the bulk of the HTML files, and `web` which is where the styling, and static assets go.  [Click here for a visual depitiction](https://raw.githubusercontent.com/Aardwolf-Social/aardwolf-interface/banjo/update-readme.md/DIRECTORY_STRUCTURE.md)
 
 **File Naming Convention**
 The current naming convention is: `directoryname_description.html`
@@ -32,6 +32,6 @@ Banjo also has a CodePen account here: <br />
 ***Contact***<br />
 Here is a couple of ways to get in touch <br />
 * Aardwolf Developer Chat: [#aardwolf-discussion:matrix.org](https://riot.im/app/#/room/#aardwolf-discussion:matrix.org)
-* To speak to Banjo directly: [https://banjo.codes](https://banjo.codes)
+* Message Banjo on Mastodon: [@banjofox@hackers.town](@banjofox@hackers.town)
 
 
