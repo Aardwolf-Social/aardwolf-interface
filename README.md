@@ -15,6 +15,9 @@ is also free of JavaScript.
 **Directory Structure**<br />
 There are two primary directories for the app `templates` which houses the bulk of the HTML files, and `web` which is where the styling, and static assets go.  [Click here for a visual depitiction](https://raw.githubusercontent.com/Aardwolf-Social/aardwolf-interface/banjo/update-readme.md/DIRECTORY_STRUCTURE.md)
 
+<strong>UPDATE!</strong> Yew Framework
+There is now -also- a directory called `aardwolf-yew-app`.  This is the `root` directory for the `Yew Framework` development.
+
 **File Naming Convention**
 The current naming convention is: `directoryname_description.html`
 This is done to be able to find, and organize files quickly while troubleshooting.  The current exception to this rule is the "miscellaneous" parts which go into /templates/elements.  Even then those may have a better place elsewhere.
@@ -32,6 +35,6 @@ Banjo also has a CodePen account here: <br />
 ***Contact***<br />
 Here is a couple of ways to get in touch <br />
 * Aardwolf Developer Chat: [#aardwolf-discussion:matrix.org](https://riot.im/app/#/room/#aardwolf-discussion:matrix.org)
-* Message Banjo on Mastodon: [@banjofox@hackers.town](@banjofox2@hackers.town)
+* Message Banjo on Mastodon: [@banjofox2@hackers.town](@banjofox2@hackers.town)
 
 
