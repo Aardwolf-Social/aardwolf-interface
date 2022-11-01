@@ -1,0 +1,1 @@
+{"rustc":11934069355019162238,"features":"","target":0,"profile":0,"path":0,"deps":[[972122636773167818,"build_script_build",false,7022635576179273095]],"local":[{"RerunIfChanged":{"output":"debug/build/wasm-bindgen-c22bea3face203af/output","paths":["build.rs"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}

@@ -1,0 +1,71 @@
+/*
+	_header.scss
+*/
+
+#logotype {
+	margin: 2em auto;
+	background-image: url("/static/aardwolf-logo.png");
+	background-repeat: no-repeat;
+	background-position: 100% 30%;
+	background-size: 150px 150px ;
+	height: 150px;
+	width: 415px;
+	padding: 10px;
+	padding-right: 150px;
+	font-family: $header-font-family;
+	font-weight: 900; 
+	margin-bottom: 2em;
+	border: 0;
+}
+
+#logotype span#head {
+	color: $dark-color;
+	letter-spacing: -2px;
+	font-size: 64px;
+}
+#logotype span#subhead {
+	display: block;
+	margin: 0 0;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+nav {
+	width: 100%;
+	padding: .25em 1em;
+	color: $background-color;
+	background-color: $dark-color;
+	border-bottom: 5px solid $secondary-color;
+
+	ul {
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	  line-height: 1.5;
+	}
+	li {
+	  display: inline;
+	  margin-right: .5em;
+	}
+	@media (max-width: 1100px) {
+	  ul {
+		display: inline-block;
+		/* float: left; */ /* Because top_nav borks on small screens (can replicate by shrinking browser window vertically */
+		padding-top: $padding-small;
+		text-align: left;
+		width: 100%;
+	  } 
+	}
+	ul li {
+		a:link,
+		a:hover,
+		a:active,
+		a:visited,	{
+			text-decoration: none;
+			font-weight: 200;
+			font-size: 18px;
+			color: $background-color;
+		}
+	}
+}
+

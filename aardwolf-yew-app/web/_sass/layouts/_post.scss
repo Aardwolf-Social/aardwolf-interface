@@ -1,0 +1,18 @@
+/*
+_post.scss
+
+styles for the post view
+*/
+
+article {
+	header {
+		h1 {
+			color: $dark-color;
+			font-family: $header-font-family;
+			font-weight: 600;
+		}
+	}
+	p.meta {
+		font-size: 80%;
+	}
+}
