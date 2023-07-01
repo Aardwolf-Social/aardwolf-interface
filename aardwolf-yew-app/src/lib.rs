@@ -30,12 +30,29 @@ pub fn aardwolf() -> Html {
     // Finally pretty print our serde'd struct data x'D!
     log::info!("{:#?}", j);
 
+    // Vector used to build an HTML list
+    let tasks = vec!["item-1", "item-2", "item-3"];
+
+
+
     // Start of the html! Yew macro
     html!{
         <>
             <h1>{"Aardwolf Yew Genesis"}</h1>
             <p>{"This page is being rendered by Yew $version, and powered by Trunk!"}</p>
+
+            <ul>
+                {list_to_html(tasks)}
+            </ul>
+
         </>
     }
 
 } // End of pub fn aardwolf()
+
+
+// Function to convert lists into HTML
+fn list_to_html(list: Vec<&str>) -> Vec<Html> {
+    // Iterate items onto a map, wrap them in <li> tags, and build the new list
+    list.iter().map(|item| html!{<li>{item}</li>}).collect()
+}
