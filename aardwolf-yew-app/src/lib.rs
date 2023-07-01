@@ -46,7 +46,7 @@ pub fn aardwolf() -> Html {
             padded=true
             navbrand={html!{
                 <ybc::NavbarItem>
-                    <ybc::Title classes={classes!("has-text-white")} size={ybc::HeaderSize::Is4}>{"Trunk | Yew | YBC"}</ybc::Title>
+                    <ybc::Title classes={classes!("has-text-white")} size={ybc::HeaderSize::Is4}>{"Trunk | Yew | YBC -- But also Aardwolf"}</ybc::Title>
                 </ybc::NavbarItem>
             }}
             navstart={html!{}}
@@ -67,6 +67,11 @@ pub fn aardwolf() -> Html {
                         {"YBC"}
                     </ybc::ButtonAnchor>
                 </ybc::NavbarItem>
+                <ybc::NavbarItem>
+                    <ybc::ButtonAnchor classes={classes!("is-black", "is-outlined")} rel={String::from("noopener noreferrer")} target={String::from("_blank")} href="https://github.com/thedodd/ybc">
+                        {"[???MYSTERYBUTTON???]"}
+                    </ybc::ButtonAnchor>
+                </ybc::NavbarItem>                
                 </>
             }}
         /> // End of ybc::Navbar
