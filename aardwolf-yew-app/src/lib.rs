@@ -2,10 +2,7 @@ use yew::prelude::*;
 
 use serde::{Serialize, Deserialize};
 
-// ybc crate imports -- https://crates.io/crates/ybc
-use ybc::TileCtx::{Ancestor, Child, Parent};
-// use ybc::TileSize; // Unused?
-// use ybc::NavbarFixed; // Unused?
+
 
 // Pull in the template modules
 mod templates;
@@ -13,6 +10,7 @@ mod templates;
 // Start using the template
 use templates::layout::footer::Footer;
 use templates::layout::nav_top::NavTop;
+use templates::shared::ybc_hero::YbcHero;
 
 // Lets make a struct for testing console logging
 #[derive(Serialize, Deserialize)] 
@@ -23,6 +21,7 @@ struct LogMe {
 
 #[function_component(Aardwolf)]
 pub fn aardwolf() -> Html {
+
 
     // Demo for logging to the browsers console
     log::info!("Hello browser console! :D");
@@ -51,57 +50,20 @@ pub fn aardwolf() -> Html {
         <>
             <NavTop />
 
+            <YbcHero />
 
-        <ybc::Hero
-            classes={classes!("is-light")}
-            size={ybc::HeroSize::FullheightWithNavbar}
-            body={html!{
-                <ybc::Container classes={classes!("is-centered")}>
-                <ybc::Tile ctx={Ancestor}>
-                    <ybc::Tile ctx={Parent} size={ybc::TileSize::Twelve}>
-                        <ybc::Tile ctx={Parent}>
-                            <ybc::Tile ctx={Child} classes={classes!("notification", "is-success")}>
-                                <ybc::Subtitle size={ybc::HeaderSize::Is3} classes={classes!("has-text-white")}>{"Trunk"}</ybc::Subtitle>
-                                <p>{"Trunk is a WASM web application bundler for Rust."}</p>
-                            </ybc::Tile>
-                        </ybc::Tile>
-                        <ybc::Tile ctx={Parent}>
-                            <ybc::Tile ctx={Child} classes={classes!("notification", "is-success")}>
-                                <ybc::Icon size={ybc::Size::Large} classes={classes!("is-pulled-right")}><img src="yew.svg"/></ybc::Icon>
-                                <ybc::Subtitle size={ybc::HeaderSize::Is3} classes={classes!("has-text-white")}>
-                                    {"Yew"}
-                                </ybc::Subtitle>
-                                <p>{"Yew is a modern Rust framework for creating multi-threaded front-end web apps with WebAssembly."}</p>
-                            </ybc::Tile>
-                        </ybc::Tile>
-                        <ybc::Tile ctx={Parent}>
-                            <ybc::Tile ctx={Child} classes={classes!("notification", "is-success")}>
-                                <ybc::Subtitle size={ybc::HeaderSize::Is3} classes={classes!("has-text-white")}>{"YBC"}</ybc::Subtitle>
-                                <p>{"A Yew component library based on the Bulma CSS framework."}</p>
-                            </ybc::Tile>
-                        </ybc::Tile>
-                        <ybc::Tile ctx={Parent}>
-                            <ybc::Tile ctx={Child} classes={classes!("notification", "is-success")}>
-                                <ybc::Subtitle size={ybc::HeaderSize::Is3} classes={classes!("has-text-white")}>{"Function Test"}</ybc::Subtitle>
-                                <p>{"This is a list generated from a vec!"}</p>
-                                <ul>
-                                    {list_to_html(tasks)}
-                                </ul>
-                            </ybc::Tile>
-                        </ybc::Tile>                        
-                    </ybc::Tile>
-                </ybc::Tile>
-                </ybc::Container>
-            }}>
-        </ybc::Hero>
+            <p>{"This is a list generated from a vec!"}</p>
+            <ul>
+                {list_to_html(tasks)}
+            </ul>
 
-        <Footer />
+
+            <Footer />
 
         </>
     }
 
 } // End of pub fn aardwolf()
-
 
 // Function to convert lists into HTML
 pub fn list_to_html(list: Vec<&str>) -> Vec<Html> {

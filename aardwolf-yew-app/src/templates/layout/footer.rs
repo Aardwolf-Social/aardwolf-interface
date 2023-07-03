@@ -5,7 +5,19 @@ pub fn footer() -> Html {
 
     html!{
         <>
-        // HTML Here
+            <footer class="footer">
+                <div class="container">
+                <div class="content has-text-centered">
+                    <a href="termsofservice.html" class="footer_box">{"Terms of Service"}</a>
+                    <span class="vertical_line"/>
+                    <span class="footer_box">{"Copyright 2018"}</span>
+                    <span class="vertical_line" />
+                    <a href="https://github.com/BanjoFox/aardwolf" class="footer_box"> {"Check us out on GitHub"}<i class="fab fa-github"></i>{"!"}</a>
+                    <span class="vertical_line" />
+                    <a href="https://www.patreon.com/banjofox" class="footer_box">{"Buy the team a coffee"}<span class="fas fa-beer" aria-hidden="true"></span></a>		
+                </div>
+                </div>
+            </footer>
         </>
     }
 }
