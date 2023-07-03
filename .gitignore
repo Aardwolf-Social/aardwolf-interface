@@ -3,6 +3,7 @@
 # Don't forget to manually add stuff when updates are run!!
 #
 .github
+.vscode
 
 #-
 # Not sure what this is anymore
