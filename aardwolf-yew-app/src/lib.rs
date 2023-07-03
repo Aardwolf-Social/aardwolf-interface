@@ -1,13 +1,18 @@
 use yew::prelude::*;
+
 use serde::{Serialize, Deserialize};
 
 // ybc crate imports -- https://crates.io/crates/ybc
 use ybc::TileCtx::{Ancestor, Child, Parent};
-use ybc::TileSize;
-use ybc::NavbarFixed;
+// use ybc::TileSize; // Unused?
+// use ybc::NavbarFixed; // Unused?
 
-// Allow ../elements/*.rs to be used here
+// Pull in the template modules
 mod templates;
+
+// Start using the template
+use templates::layout::footer::Footer;
+use templates::layout::nav_top::NavTop;
 
 // Lets make a struct for testing console logging
 #[derive(Serialize, Deserialize)] 
@@ -44,40 +49,8 @@ pub fn aardwolf() -> Html {
     // Start of the html! Yew macro
     html!{
         <>
-        <ybc::Navbar
-            classes={classes!("is-success")}
-            padded=true
-            navbrand={html!{
-                <ybc::NavbarItem>
-                    <ybc::Title classes={classes!("has-text-white")} size={ybc::HeaderSize::Is4}>{"Trunk | Yew | YBC -- But also Aardwolf"}</ybc::Title>
-                </ybc::NavbarItem>
-            }}
-            navstart={html!{}}
-            navend={html!{
-                <>
-                <ybc::NavbarItem>
-                    <ybc::ButtonAnchor classes={classes!("is-black", "is-outlined")} rel={String::from("noopener noreferrer")} target={String::from("_blank")} href="https://github.com/thedodd/trunk">
-                        {"Trunk"}
-                    </ybc::ButtonAnchor>
-                </ybc::NavbarItem>
-                <ybc::NavbarItem>
-                    <ybc::ButtonAnchor classes={classes!("is-black", "is-outlined")} rel={String::from("noopener noreferrer")} target={String::from("_blank")} href="https://yew.rs">
-                        {"Yew"}
-                    </ybc::ButtonAnchor>
-                </ybc::NavbarItem>
-                <ybc::NavbarItem>
-                    <ybc::ButtonAnchor classes={classes!("is-black", "is-outlined")} rel={String::from("noopener noreferrer")} target={String::from("_blank")} href="https://github.com/thedodd/ybc">
-                        {"YBC"}
-                    </ybc::ButtonAnchor>
-                </ybc::NavbarItem>
-                <ybc::NavbarItem>
-                    <ybc::ButtonAnchor classes={classes!("is-black", "is-outlined")} rel={String::from("noopener noreferrer")} target={String::from("_blank")} href="https://github.com/thedodd/ybc">
-                        {"[???MYSTERYBUTTON???]"}
-                    </ybc::ButtonAnchor>
-                </ybc::NavbarItem>                
-                </>
-            }}
-        /> // End of ybc::Navbar
+            <NavTop />
+
 
         <ybc::Hero
             classes={classes!("is-light")}
@@ -121,6 +94,9 @@ pub fn aardwolf() -> Html {
                 </ybc::Container>
             }}>
         </ybc::Hero>
+
+        <Footer />
+
         </>
     }
 
