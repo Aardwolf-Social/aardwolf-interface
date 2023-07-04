@@ -43,8 +43,14 @@ pub fn nav_top() -> Html {
                         {"About"}
                       </a>
                       <a class="navbar-item" href="../templates/asides/aside_settings.html">
-                        {"Settuings"}
+                        {"Settings"}
                       </a>
+                      <a class="navbar-item" href="../templates/pages/sign_in">
+                        {"Sign Up"}
+                      </a>
+                      <a class="navbar-item" href="../templates/asides/sign_up">
+                        {"Sign In"}
+                      </a>                                            
                       <a class="navbar-item">
                         {"Contact"}
                       </a>

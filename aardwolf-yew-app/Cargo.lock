@@ -13,6 +13,7 @@ dependencies = [
  "wasm-logger",
  "ybc",
  "yew",
+ "yew-router",
 ]
 
 [[package]]

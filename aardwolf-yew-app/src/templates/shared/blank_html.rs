@@ -5,7 +5,7 @@ pub fn html_thing() -> Html {
 
     html!{
         <>
-        // HTML Here
+            // HTML Here
         </>
     }
 }
