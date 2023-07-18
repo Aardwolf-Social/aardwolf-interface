@@ -39,10 +39,19 @@
 	.show-on-hover:hover > ul.dropdown-menu {
       display: block;    
 	}
-	.verticalLine {
+	.vertical-line {
 	  border-left: 2px solid #000;
 	}
-    .footer {
-      padding: 2rem 1rem 1.5rem 1rem;
-      border-top: 1px solid #1e1c11;
-    }
+  .footer {
+    padding: 2rem 1rem 1.5rem 1rem;
+    border-top: 1px solid #1e1c11;
+  }
+  .footer-box {
+    /* top | right | bottom | left */
+    padding: 4px 1em 6px 2em;
+  }
+footer {
+	text-align: center;
+  /* top | right | bottom | left */
+  padding: 0.5em 1em 2em 2em;
+}

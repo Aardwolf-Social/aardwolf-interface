@@ -12,9 +12,9 @@ pub fn footer() -> Html {
                     <span class="vertical-line"/>
                     <span class="footer-box">{"Copyright 2018"}</span>
                     <span class="vertical-line" />
-                    <a href="https://github.com/BanjoFox/aardwolf" class="footer-box"> {"Check us out on GitHub"}<i class="fab fa-github"></i>{"!"}</a>
+                    <a href="https://github.com/BanjoFox/aardwolf" class="footer-box"> {"Check us out on GitHub "}<i class="fa fa-github"></i>{"!"}</a>
                     <span class="vertical-line" />
-                    <a href="https://www.patreon.com/banjofox" class="footer-box">{"Buy the team a coffee"}<span class="fas fa-beer" aria-hidden="true"></span></a>		
+                    <a href="https://www.patreon.com/banjofox" class="footer-box">{"Buy the team a coffee "}<span class="fa fa-beer" aria-hidden="true"></span></a>		
                 </div>
                 </div>
             </footer>

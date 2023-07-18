@@ -1,11 +1,13 @@
 use yew::prelude::*;
 
-#[function_component(HTMLThing)]
-pub fn html_thing() -> Html {
+#[function_component(MainTitle)]
+pub fn main_title() -> Html {
 
     html!{
         <>
-            // HTML Here
+            <head>
+                <title>{"Aardwolf Social | Sign Up"}</title>
+            </head>
         </>
     }
 }

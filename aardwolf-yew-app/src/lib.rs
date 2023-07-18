@@ -1,16 +1,14 @@
 use yew::prelude::*;
-
 use serde::{Serialize, Deserialize};
 
-
-
 // Pull in the template modules
-mod templates;
+pub mod templates;
 
 // Start using the template
+use templates::elements::main_title::MainTitle;
+use templates::pages::sign_up::SignUp;
 use templates::layout::footer::Footer;
-use templates::layout::nav_top::NavTop;
-use templates::shared::ybc_hero::YbcHero;
+
 
 // Lets make a struct for testing console logging
 #[derive(Serialize, Deserialize)] 
@@ -42,24 +40,12 @@ pub fn aardwolf() -> Html {
     // Finally pretty print our serde'd struct data x'D!
     log::info!("{:#?}", j);
 
-    // Vector used to build an HTML list
-    let tasks = vec!["item-1", "item-2", "item-3"];
-
     // Start of the html! Yew macro
     html!{
         <>
-            <NavTop />
-
-            <YbcHero />
-
-            <p>{"This is a list generated from a vec!"}</p>
-            <ul>
-                {list_to_html(tasks)}
-            </ul>
-
-
+            <MainTitle />
+            <SignUp />
             <Footer />
-
         </>
     }
 

@@ -1,41 +1,30 @@
 use yew::prelude::*;
 
+use crate::templates::elements::main_title::MainTitle;
+use crate::templates::elements::input_email::InputEmail;
+use crate::templates::elements::input_username::InputUsername;
+use crate::templates::elements::input_password::InputPassword;
+use crate::templates::elements::input_password_confirm::InputPasswordConfirm;
+
+use crate::templates::shared::about_us::AboutUs;
+
 #[function_component(SignUp)]
 pub fn sign_up() -> Html {
 
     html!{
         <>
-            <head>
-                <title>{"Aardwolf Social | Sign Up"}</title>
-            </head>
+            <MainTitle />
+            
             <section class="section">
                 <div class="container">
         
                     <div class="columns is-centered">
         
-                        // <!-- ******************************* -->
                         // <!-- Begin Left-Hand Column Contents -->
-                        // <!-- ******************************* -->
-                        <div class="column is-mobile">
-                            <h1 class="title">
-                                {"About Aardwolf"}
-                            </h1>
-                            <p class="subtitle">
-                                {"This is who we are!"}
-                            </p>
-                            <p>{"Aardwolf is a platform for creating new social networks, connected across the web. While existing social media sites work to funnel the world into a single shared experience (and advertising marketplace), we recognize that we are all individuals with different identities and interests."}</p><br />
-        
-                            <p>{"Each server hosts it's own community of users who are posting, sharing pictures, links, etc. They are replying and liking each other's posts, and re-sharing the ones they like best."}</p><br />
-        
-                            <p>{"Users are not limited to only interacting with other users on their service: they can follow users on other sites that are powered by Aardwolf just as if they were on their own site (the official term is Federation). They can even connect with users on other platforms, if -- like the microblogging service"} <a href="http://joinmastodon.org">{"Mastodon"}</a> {"- they implement the same open protocols Aardwolf is built on."}</p><br />
-        
-                            <p><a href="https://github.com/banjofox/aardwolf">{"Aardwolf"}</a> {"is open source, so developers who want to contribute or understand how it works can dig in and do so."}</p>
-                        </div>
+                        <AboutUs />
                         // <!-- End Left-Hand Column -->
         
-                        // <!-- ******************************** -->
-                        // <!-- Begin Right-Hand Column Contents -->
-                        // <!-- ******************************** -->			
+                        // <!-- Begin Right-Hand Column Contents -->			
                         <div class="column is-mobile">
                             <h1 class="title">
                                 {"Create an Account"}
@@ -49,48 +38,20 @@ pub fn sign_up() -> Html {
                             <form class="box" method="POST" action="/auth">
                                 
                                 // <!-- Reusable Username Input -->
-                                <div class="field">
-                                    <label class="label">{"Desired Username"}</label>
-                                    <div class="control has-icons-left">
-                                        <input class="input" type="text" placeholder="e.g. HyenaHugger" />
-                                        <span class="icon is-small is-left">
-                                            <span class="fa fa-user"></span>
-                                        </span>
-                                    </div>
-                                </div>
+                                <InputUsername />
+
                                 // <!-- End Reusable Username Input -->
+
                                 // <!-- Reusable Email Input -->
-                                <div class="field">
-                                    <label class="label">{"Email Address"}</label>
-                                    <div class="control has-icons-left">
-                                        <input class="input" type="email" placeholder="e.g. HyenaHugger@SmallCo.net" />
-                                        <span class="icon is-small is-left">
-                                            <span class="fa fa-envelope"></span>
-                                        </span>
-                                    </div>
-                                </div>
+                                <InputEmail />
                                 // <!-- End Reusable Email Input -->
+
                                 // <!-- Reusable Password Input -->
-                                <div class="field">
-                                    <label class="label">{"Password"}</label>
-                                    <div class="control has-icons-left">
-                                        <input class="input" type="password" placeholder="*************" />
-                                        <span class="icon is-small is-left">
-                                            <span class="fa fa-lock"></span>
-                                        </span>
-                                    </div>
-                                </div>
+                                <InputPassword />
                                 // <!-- End Reusable Password Input -->
+
                                 // <!-- Reusable Password Confirm Input -->
-                                <div class="field">
-                                    <label class="label">{"Confirm Password"}</label>
-                                    <div class="control has-icons-left">
-                                        <input class="input" type="password" placeholder="*************" />
-                                        <span class="icon is-small is-left">
-                                            <span class="fa fa-lock"></span>
-                                        </span>
-                                    </div>
-                                </div>
+                                <InputPasswordConfirm />
                                 // <!-- End Reusable Password Confirm Input -->
                                 <button>{"Sign Up"}</button>
                             </form>
