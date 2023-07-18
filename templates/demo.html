@@ -27,12 +27,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aardwolf Social | Homepage Demo</title>
-  <link rel="stylesheet" href="../web/css/fork-awesome-1.1.7/css/fork-awesome.min.css">
-  <link rel="stylesheet" href="../web/css/bulma-0.7.5/css/bulma.min.css">
-  <link rel="stylesheet" href="../web/css/base.css">
-  <link rel="stylesheet" href="../web/css/scratchpad.css">
-  <!-- Component styles -->
-  <link rel="stylesheet" href="../web/css/components/notificationBox.css">
+ 
+    <!-- Images, and other static assets -->
+    <link data-trunk rel="copy-dir" href="./assets" />
+
+    <!-- Primary CSS/SCSS: Should these be combined?  Do a proper SCSS _base n all that? -->
+    <link rel="stylesheet" href="./static/base.css" />
+    <link rel="stylesheet" href="./static/scratchpad.css" /><!-- This is for testing btw ;) -->
+    <link rel="stylesheet" href="./static/notification_dropdown.css" />
+    <link rel="stylesheet" href="./static/notificationBox.css" />
+
+    <!-- External Styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">" />
 </head>
 
 <body>
@@ -344,13 +351,13 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a href="termsofservice.html" class="footer_box">Terms of Service</a>
-      <span class="vertical_line" />
-      <span class="footer_box">Copyright - 2017</span>
-      <span class="vertical_line" />
-      <a href="https://github.com/BanjoFox/aardwolf" class="footer_box">Check us out on <i class="fas fa-lg fa-github"></i></a>
-      <span class="vertical_line" />
-      <a href="https://www.patreon.com/banjofox" class="footer_box">Buy Banjo a <span class="fa fa-beer"aria-hidden="true"></span></a>
+      <a href="termsofservice.html" class="footer-box">Terms of Service</a>
+      <span class="vertical-line" />
+      <span class="footer-box">Copyright - 2017</span>
+      <span class="vertical-line" />
+      <a href="https://github.com/BanjoFox/aardwolf" class="footer-box">Check us out on <i class="fa  fa-lg fa-github"></i></a>
+      <span class="vertical-line" />
+      <a href="https://www.patreon.com/banjofox" class="footer-box">Buy Banjo a <span class="fa fa-beer"aria-hidden="true"></span></a>
     </div>
   </div>
 </footer>
