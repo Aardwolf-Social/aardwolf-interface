@@ -39,7 +39,7 @@ body {
   .show-on-hover:hover > ul.dropdown-menu {
     display: block;    
   }
-  .verticalLine {
+  .vertical-line {
     border-left: 2px solid #000;
   }
   .footer {
