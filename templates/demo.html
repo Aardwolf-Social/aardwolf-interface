@@ -5,23 +5,6 @@
 <!-- FILE: /html_head.html        -->
 <!-- **************************** -->
 
-<script src="../web/javascript/vue.2.5.20.min.js"></script>
-<script src="../web/javascript/components/notificationBox.js"></script>
-<script src="../web/javascript/components/delete_notification.js"></script>
-<script>
-  new Vue({
-    el: "#app",
-    data: {
-      showNotificationBox: false
-    },
-    methods: {
-      toggleNotifCompView: function() {
-        console.log('calling tNCV');
-        this.showNotificationBox = !this.showNotificationBox;
-      }
-    }
-  })
-</script>
 
 <head>
   <meta charset="utf-8">
@@ -32,15 +15,14 @@
     <link data-trunk rel="copy-dir" href="./assets" />
 
     <!-- Primary CSS/SCSS: Should these be combined?  Do a proper SCSS _base n all that? -->
-    <link rel="stylesheet" href="./static/base.css" />
-    <link rel="stylesheet" href="./static/scratchpad.css" /><!-- This is for testing btw ;) -->
-    <link rel="stylesheet" href="./static/notification_dropdown.css" />
-    <link rel="stylesheet" href="./static/notificationBox.css" />
+    <link rel="stylesheet" href="../web/css/base.css" />
+    <link rel="stylesheet" href="../web/css/scratchpad.css" /><!-- This is for testing btw ;) -->
+    <link rel="stylesheet" href="../web/css/notification_dropdown.css" />
+    <link rel="stylesheet" href="../web/css/notificationBox.css" />
 
     <!-- External Styling -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">" />
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
 
 <body>
 
@@ -162,15 +144,15 @@
   </div><!-- /navbarBasicExample -->
 </nav> <!-- /home_nav_top -->
 <!-- ***************************** -->
-
+<section class="section">
 <div class="columns is-mobile"> <!-- Body container -->
 
-  <div class="left-column columns is-3">
+  <div class="left-column columns is-4">
     <!-- ***************************** -->
     <!-- FILE: /aside/aside_nav_left.htm -->
     <!-- ***************************** -->
     <aside class="menu sidebar-menu">
-	  
+	
 	  <!-- ***************************** -->
 	  <!-- FILE: /elements/search_bar.html -->
 	  <!-- ***************************** -->
@@ -347,6 +329,8 @@
     </section>
   </div>
 </div>
+
+</ section> <!-- End of Body Section -->
 </body>
 <footer class="footer">
   <div class="container">

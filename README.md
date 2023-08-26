@@ -12,6 +12,10 @@ Additionally, icons provided by [ForkAwesome](https://forkawesome.github.io/Fork
 is also free of JavaScript. 
 <br />
 
+## Homepage Screenshot
+<p align="center">
+  <img alt="Aardwolf Social: Powering connected social communities with open software" src="/design_notes/Home-Page-Demo.png" />
+
 **Directory Structure**<br />
 There are two primary directories for the app `templates` which houses the bulk of the HTML files, and `web` which is where the styling, and static assets go.  [Click here for a visual depitiction](https://raw.githubusercontent.com/Aardwolf-Social/aardwolf-interface/banjo/update-readme.md/DIRECTORY_STRUCTURE.md)
 
