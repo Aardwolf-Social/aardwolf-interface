@@ -1,5 +1,5 @@
 # aardwolf-interface
-This is a dedicated repository for the User Interface (Front End) components of the Aardwolf Project :)
+This is a dedicated repository for the User Interface (Front End) components of the Aardwolf Social project :)
 
 Ideally the interface being built here should be able to stand on its own.  This allows developers to play around, and test out ideas 
 without having to build the full rust project.  Once the visual components have been vetted, they will of course need to be "backported" into the main repository
@@ -38,7 +38,7 @@ Banjo also has a CodePen account here: <br />
 
 ***Contact***<br />
 Here is a couple of ways to get in touch <br />
-* Aardwolf Developer Chat: [#aardwolf-discussion:matrix.org](https://riot.im/app/#/room/#aardwolf-discussion:matrix.org)
+* Aardwolf Social Developer Chat: [#aardwolf-discussion:matrix.org](https://riot.im/app/#/room/#aardwolf-discussion:matrix.org)
 * Message Banjo on Mastodon: [@banjofox2@hackers.town](@banjofox2@hackers.town)
 
 
