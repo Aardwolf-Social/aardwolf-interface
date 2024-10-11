@@ -9,6 +9,7 @@ This document is for the purpose of trying to explain the design as originally p
 * The `/templates` directory is for the HTML
 * The `/web` directory is used to store all of the static assets
 * The `/demo_files` directory should be used for any files which are for demonstration/testing purposes only.
+* The `aardwolf-yew-app` directory is where all of the [Yew Framework](https://yew.rs) templates are being developed.
 * Additional directory etails can be tracked in the DIRECTORY_STRUCTURE.md
 
 **Web Layout**
